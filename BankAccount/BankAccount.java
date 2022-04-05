@@ -2,15 +2,14 @@ import java.util.*;
 public class BankAccount {
     private double checkingBalance;
     private double savingsBalance;
-    private String accountNum;
+    private static int numOfAccounts;
     private static double accountTotal;
 
     // Constructor
     public BankAccount() {
-        checkingBalance = 0;
-        savingsBalance = 0;
-        numOfAccounts++;
-        accountNum = getAccountNum();
+        this.checkingBalance = 0;
+        this.savingsBalance = 0;
+        this.numOfAccounts++;
     }
 
     //getters
