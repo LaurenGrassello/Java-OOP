@@ -14,11 +14,11 @@ public class BankAccount {
 
     //getters
     public void getCheckingBalance() {
-        System.out.printf("Total checking balance: $%.2f\n", this.checkingBalance);
+        System.out.printf("Total checking balance: $%.2f\n ", this.checkingBalance);
     }
 
     public void getSavingsBalance() {
-        System.out.printf("Total savings balance: $%.2f\n", this.savingsBalance);
+        System.out.printf("Total savings balance: $%.2f\n ", this.savingsBalance);
     }
 
     // make deposit
@@ -26,13 +26,13 @@ public class BankAccount {
         if(account == "checking") {
             checkingBalance += amount;
             accountTotal += amount;
-            System.out.printf("Successful deposit to checking account: $%.2f", amount);
+            System.out.printf("Successful deposit to checking account: $%.2f ", amount);
             getCheckingBalance();
         }
         else if(account == "savings") {
             savingsBalance += amount;
             accountTotal += amount;
-            System.out.printf("Successful deposit to savings account: $%.2f", amount);
+            System.out.printf("Successful deposit to savings account: $%.2f ", amount);
             getSavingsBalance();
         }
         else {
@@ -49,7 +49,7 @@ public class BankAccount {
             else {
                 checkingBalance -= amount;
                 accountTotal -= amount;
-                System.out.printf("Successful withdraw from checking account: $%.2f", amount);
+                System.out.printf("Successful withdraw from checking account: $%.2f ", amount);
                 getCheckingBalance();
             }
         }
@@ -60,7 +60,7 @@ public class BankAccount {
             else {
                 savingsBalance -= amount;
                 accountTotal -= amount;
-                System.out.printf("Successful withdraw from savings account: $%.2f", amount);
+                System.out.printf("Successful withdraw from savings account: $%.2f ", amount);
                 getSavingsBalance();
             }
         }
