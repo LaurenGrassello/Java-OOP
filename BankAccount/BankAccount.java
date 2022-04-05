@@ -9,7 +9,7 @@ public class BankAccount {
     public BankAccount() {
         this.checkingBalance = 0;
         this.savingsBalance = 0;
-        this.numOfAccounts++;
+        numOfAccounts++;
     }
 
     //getters
