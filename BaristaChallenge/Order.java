@@ -50,20 +50,20 @@ class Order{
         System.out.printf("Total: $%.2f\n\n", this.getOrderTotal());
     }
 
-    //getters
+    //getters -- return type but no parameters
     public String getName(){
     return this.name;
     }
 
     public ArrayList<Item> getItem(){
-        return items;
+        return this.items;
     }
 
     public boolean isReady(){
         return this.ready;
     }
 
-    //setters
+    //setters -- no return but has parameters
     public void setName(String name){
         this.name = name;
     }
