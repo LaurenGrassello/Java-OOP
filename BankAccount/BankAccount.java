@@ -21,6 +21,11 @@ public class BankAccount {
         System.out.printf("Total savings balance: $%.2f\n ", this.savingsBalance);
     }
 
+    public void getAccountTotal() {
+        getCheckingBalance();
+        getSavingsBalance();
+    }
+
     // make deposit
     public void makeDeposit(String account, double amount ) {
         if(account == "checking") {
@@ -68,11 +73,4 @@ public class BankAccount {
             System.out.println("Error making withdraw");
         }
     }
-
-    // Get all account amounts
-    public void getAccountTotal() {
-        getCheckingBalance();
-        getSavingsBalance();
-    }
-
 }
