@@ -4,22 +4,15 @@ public class TestOrders {
     
         // Menu items
         Item item1 = new Item("Mocha", 3.5);
-
         Item item2 = new Item("Latte", 3.75);
-
         Item item3 = new Item("Cappucino", 4.25);
-
         Item item4 = new Item("Drip Coffee", 3.5);
         
         // Order variables -- order1, order2 etc.
         Order order1 = new Order();
-
         Order order2 = new Order();
-
         Order order3 = new Order("Cindhuri");
-
         Order order4 = new Order("Sam");
-        
         Order order5 = new Order("Jimmy");
 
         order1.addItem(item1); order1.addItem(item2);
